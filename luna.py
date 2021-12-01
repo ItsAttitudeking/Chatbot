@@ -50,7 +50,7 @@ async def type_and_send(message):
     await message._client.send_chat_action(chat_id, "cancel")
 
 
-@luna.on_message(filters.command("repo") & ~filters.edited)
+@luna.on_message(filters.command("source") & ~filters.edited)
 async def repo(_, message):
     await message.reply_text(
         "[🔥Source](https://github.com/ItsAttitudeking/Chatbot)"
@@ -69,7 +69,7 @@ async def start(_, message):
 @luna.on_message(
     ~filters.private
     & filters.text
-    & ~filters.command("help")
+    & ~filters.command("fire")
     & ~filters.edited,
     group=69,
 )
