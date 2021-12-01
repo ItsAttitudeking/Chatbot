@@ -13,7 +13,7 @@ if is_config:
 else:
     from sample_config import *
 
-Attitude = Client(
+luna = Client(
     ":memory:",
     bot_token=bot_token,
     api_id=6,
@@ -50,7 +50,7 @@ async def type_and_send(message):
     await message._client.send_chat_action(chat_id, "cancel")
 
 
-@luna.on_message(filters.command("source") & ~filters.edited)
+@luna.on_message(filters.command("repo") & ~filters.edited)
 async def repo(_, message):
     await message.reply_text(
         "[🔥Source](https://github.com/ItsAttitudeking/Chatbot)"
@@ -59,17 +59,17 @@ async def repo(_, message):
     )
 
 
-@luna.on_message(filters.command("fire") & ~filters.edited)
+@luna.on_message(filters.command("help") & ~filters.edited)
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
-    await message.reply_text("🔥")
+    await message.reply_text("/repo - for Source")
 
 
 @luna.on_message(
     ~filters.private
     & filters.text
-    & ~filters.command("fire")
+    & ~filters.command("help")
     & ~filters.edited,
     group=69,
 )
