@@ -1,9 +1,9 @@
 {
   "name": "Chat Bot",
-  
+  "logo" : "https://te.legra.ph/file/7dcf2d9f705f95a5a521f.jpg"
   "description": "Just another Telegram AI chat bot written in Python using Pyrogram.",
   "repository": "https://github.com/ItsAttitudeking/Chatbot",
-  "logo" : "https://te.legra.ph/file/7dcf2d9f705f95a5a521f.jpg"
+  
     "python",
     "ai-bot",
     "telegram-ai-bot",
