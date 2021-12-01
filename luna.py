@@ -13,7 +13,7 @@ if is_config:
 else:
     from sample_config import *
 
-luna = Client(
+Attitude = Client(
     ":memory:",
     bot_token=bot_token,
     api_id=6,
@@ -59,11 +59,11 @@ async def repo(_, message):
     )
 
 
-@luna.on_message(filters.command("help") & ~filters.edited)
+@luna.on_message(filters.command("fire") & ~filters.edited)
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
-    await message.reply_text("/repo - Get Repo Link")
+    await message.reply_text("🔥")
 
 
 @luna.on_message(
