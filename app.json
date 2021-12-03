@@ -1,40 +1,22 @@
 {
-  "name": "A Chat Bot",
-  "logo" : "https://te.legra.ph/file/7dcf2d9f705f95a5a521f.jpg",
-  "description": "Just another Telegram AI chat bot written in Python using Pyrogram.",
-  "repository": "https://github.com/TheHamkerCat/LunaChatBot",
-  "keywords" : [
-    "python",
-    "ai-bot",
-    "telegram-ai-bot",
-    "telegram-bot",
-    "pyrogram",
-    "arq"
-  ],
-  "stack": "heroku-20",
+  "name": "Chatbot",
+  "description": "Open-Source bot for Aichat bot",
+  "logo": "https://te.legra.ph/file/7dcf2d9f705f95a5a521f.jpg",
+  "keywords": ["aichatbot", "chatbot", "telegram"],
+  "repository": "https://github.com/Itsunknown-12/Chatbot",
+  "buildpacks": [{
+  "url": "heroku/python"
+  }],
+  "formation": {
+  "worker": {
+  "quantity": 1,
+  "size": "free"
+        }
+    },
   "env": {
-    "bot_token": {
-           "description": "Your Bot's Api Token ,Get it from @BotFather",
-           "required": true
-    },
-    "ARQ_API_KEY": {
-           "description": "Get this from @ARQRobot",
-           "required": true
-    },
-    "LANGUAGE": {
-           "description": "Language of Chat Bot ,list --> https://py-googletrans.readthedocs.io/en/latest/#googletrans-languages",
-           "value": "en",
-           "required": true
-    },
-    "ARQ_API_BASE_URL": {
-           "description": "ARQ URL ,Don't Change It",
-           "value": "https://thearq.tech",
-           "required": true
+    "BOT_TOKEN": {
+      "description": "A Bot Token from @BotFather",
+      "required": true
     }
-  },
-  "buildpacks": [
-   {
-    "url": "heroku/python"
-   }
-  ]
+  }
 }
