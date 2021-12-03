@@ -1,3 +1,5 @@
 pyrogram
 python-arq
 TgCrypto
+heroku3
+pymongo
