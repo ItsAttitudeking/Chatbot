@@ -6,7 +6,7 @@
 
 </p>
 
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=ItsAttitudeking&repo=king_thor&theme=dark)
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=ItsAttitudeking&repo=chatbot&theme=dark)
 
 </p>
 
