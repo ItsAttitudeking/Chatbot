@@ -1,9 +1,9 @@
 {
   "name": "Chatbot",
-  "description": "Open-Source bot for Aichat bot",
-  "logo": "https://te.legra.ph/file/7dcf2d9f705f95a5a521f.jpg",
+  "description": "Attitude Galaxy",
+  "logo": "https://te.legra.ph/file/bfc3e137fc23773b4cd74.jpg",
   "keywords": ["aichatbot", "chatbot", "telegram"],
-  "repository": "https://github.com/Itsunknown-12/Chatbot",
+  "repository": "https://github.com/ItsAttitudeking/Chatbot",
   "buildpacks": [{
   "url": "heroku/python"
   }],
